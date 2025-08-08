@@ -10,7 +10,7 @@ public class RequiredRemainder {
             int b=sc.nextInt();
             int c=sc.nextInt();
             System.out.println(((c/a)*a+b<=c)?((c/a)*a+b):((c/a)-1)*a+b);
-            sc.close();
         }
+        sc.close();
     }
 }
