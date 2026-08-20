@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class CollectingCoins {
@@ -6,15 +7,17 @@ public class CollectingCoins {
         int t=sc.nextInt();
         while (t--!=0)
         {
-            long sum=0;
-            for(int i=0;i<4;i++)
+            int arr[]=new int[3];
+            for(int i=0;i<3;i++)
             {
-                sum+=sc.nextLong();
+                arr[i]=sc.nextInt();
             }
-            if(sum%3==0)
+            Arrays.sort(arr);
+            int n=sc.nextInt()-(arr[2]-arr[1])-(arr[2]-arr[0]);
+            if(n>=0&&n%3==0)
             {
                 System.out.println("YES");
-            }
+            }    
             else
             {
                 System.out.println("NO");

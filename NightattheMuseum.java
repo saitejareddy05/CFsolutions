@@ -1,3 +1,4 @@
+import java.util.*;
 public class NightattheMuseum
 {
     public static void main(String[] args) {
@@ -7,8 +8,8 @@ public class NightattheMuseum
         char prev='a';
         for(char ch:s.toCharArray())
         {
-            ans+=Math.min(((prev+26)-ch)+1,Math.abs(prev-ch));
-            prev=ch;
+           ans+=Math.min(prev-ch,ch-prev);
         }
+        System.out.println(ans);
     }
 }
