@@ -1,8 +1,4 @@
 import java.util.*;
-import java.util.HashSet;
-import java.util.Scanner;
-import java.util.Set;
-
 public class DoNotBeDistracted {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -24,8 +20,7 @@ public class DoNotBeDistracted {
                         j++;
                     }
                     i=j-1;
-                }
-                
+                }    
             }
             boolean found=false;
             for(int i=0;i<s.size();i++)
@@ -35,14 +30,11 @@ public class DoNotBeDistracted {
                     found=true;
                     break;
                 }
-            
             }
             if(found)
             System.out.println("NO");
             else
             System.out.println("YES");
-
-            
         }
         sc.close();
     }
