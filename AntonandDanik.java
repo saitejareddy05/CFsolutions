@@ -11,7 +11,6 @@ public class AntonandDanik{
             {
                 countA++;
             }
-        
         }
         if(countA==n-countA)
         System.out.println("Friendship");
