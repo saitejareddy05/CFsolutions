@@ -10,7 +10,6 @@ public class A{
           int a2=sc.nextInt();
           int a4=sc.nextInt();
           int a5=sc.nextInt();
-          // int max=0;
           int maxFib = 0; 
           for (int a3 = -100; a3 <= 100; a3++)
           { 
