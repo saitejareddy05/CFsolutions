@@ -16,8 +16,7 @@ public class PlusOneontheSubset {
                 max=Math.max(max, arr[i]);
                 min=Math.min(min,arr[i]);
             }
-            System.out.println(max-min);
-            
+            System.out.println(max-min);  
         }
         sc.close();
     }
