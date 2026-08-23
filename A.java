@@ -29,7 +29,7 @@ public class A{
             } 
             maxFib = Math.max(maxFib, fibCount);
           }
-          System.err.println(maxFib);
+          System.out.println(maxFib);
           
       }
       sc.close();

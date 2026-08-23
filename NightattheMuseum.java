@@ -8,7 +8,7 @@ public class NightattheMuseum
         char prev='a';
         for(char ch:s.toCharArray())
         {
-           ans+=Math.min(prev-ch,ch-prev);
+           ans+=Math.min(Math.abs(prev-ch),Math.abs(ch-prev));
         }
         System.out.println(ans);
     }
